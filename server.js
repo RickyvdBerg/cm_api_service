@@ -11,7 +11,7 @@ app.all('*', function(req, res, next){
 
 app.use('/api', require('./routes/apiV1'));
 
-let port = 3307;
+let port = process.env.PORT || 8000;
 
 app.listen(port, () => {
     console.log('De server draait op port ' + port);
