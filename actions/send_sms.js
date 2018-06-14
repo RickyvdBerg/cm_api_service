@@ -1,7 +1,7 @@
 const request = require('request');
 
 module.exports = {
-  sendSms(producttoken, content, numbers, From) {
+  sendSMS(producttoken, content, numbers, From) {
     return new Promise((resolve) => {
       let headers = {
         "Content-Type": "application/json",
@@ -42,7 +42,7 @@ module.exports = {
           } else {
   
             console.log('hij komt bij detrue  in valid smsdationhttp')
-            return (true);
+            resolve (true);
           }
         }
   
