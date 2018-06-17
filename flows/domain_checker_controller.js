@@ -9,7 +9,7 @@ module.exports = {
             if (bool) {
                 numberValidation.validateNumer(json.phoneNumber, json.token).then((bool) => {
                     if (bool) {
-                        sendSms.sendSms(json.token, json.message, json.phoneNumber, json.from);         
+                        sendSms.sendSMS(json.token, json.message, json.phoneNumber, json.from);         
                     }
                 });
             }

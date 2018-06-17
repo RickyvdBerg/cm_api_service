@@ -34,18 +34,17 @@ module.exports = {
       };
   
       request(options, function (err, res, body) {
-        if (res) {
+          if (res) {
           if (res.statusCode !== 200) {
             console.log('hij komt bij de false in sms validation')
             resolve(false);
-  
+
           } else {
-  
+
             console.log('hij komt bij detrue  in valid smsdationhttp')
-            resolve (true);
+            resolve(true);
           }
         }
-  
       });
     }); 
   }
